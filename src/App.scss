@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfcfc;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;  
+  padding: 14px 0;
+}
+
+.swiper {
+  margin: 0;  
+  position: static;
+  height: 280px;
+
+  .swiper-wrapper {
+    box-sizing: inherit;
+
+    > .swiper-slide {            
+      background-color: #ddd;      
+      display: flex;
+      flex-direction: column;
+      
+      div {
+        width: 100%;
+        height: 220px;        
+        background-color: blue;      
+      }
+    }
+  }
+
+  .swiper-button-next {    
+    right: -3.125rem;
+  }
+
+  .swiper-button-prev {
+    left: -3.125rem;
+  }
+
+  .swiper-pagination {
+    position: absolute;    
+    bottom: -10px;
+  }
+}
